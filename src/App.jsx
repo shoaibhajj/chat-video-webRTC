@@ -1,10 +1,14 @@
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable quotes */
+/* eslint-disable no-self-assign */
+/* eslint-disable no-unused-vars */
+/* eslint-disable quotes */
+// eslint-disable-next-line import/no-duplicates
 import React, { useEffect, useState } from "react";
 import {
   Typography,
-  AppBar,
   Container,
   Grid,
   Button,
@@ -16,7 +20,6 @@ import VideoPlayer from "./components/VideoPlayer";
 import Sidebar from "./components/Sidebar";
 import Notifications from "./components/Notifications";
 import ExplainCard from "./components/ExplainCard";
-import { ToastContainer } from "react-toastify";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -91,8 +94,7 @@ const App = () => {
                   color="textSecondary"
                   align="center"
                 >
-                  Truly simple video chat and screen sharing between 2
-                  people
+                  Truly simple video chat and screen sharing between 2 people
                 </Typography>
               </Grid>
               <Grid item xs={3} />
@@ -128,7 +130,7 @@ const App = () => {
                 style={{
                   marginTop: "1rem",
                 }}
-              ></Grid>
+              />
               <Grid container spacing={3} xs={12}>
                 <Grid item xs={12} md={4}>
                   <ExplainCard

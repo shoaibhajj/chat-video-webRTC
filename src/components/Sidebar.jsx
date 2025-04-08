@@ -1,4 +1,7 @@
+/* eslint-disable no-self-assign */
+/* eslint-disable no-unused-vars */
 /* eslint-disable quotes */
+// eslint-disable-next-line import/no-duplicates
 import React, { useState, useContext, useRef } from "react";
 import {
   Button,
@@ -13,10 +16,11 @@ import { Phone, PhoneDisabled } from "@material-ui/icons";
 import LinkIcon from "@material-ui/icons/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import { Bounce, toast, ToastContainer } from "react-toastify";
+// eslint-disable-next-line import/no-duplicates
+import { useEffect } from "react";
 import ringTone from "../audio/ring-tone.mp3";
 
 import { SocketContext } from "../Context";
-import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
