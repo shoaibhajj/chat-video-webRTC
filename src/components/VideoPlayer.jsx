@@ -1,8 +1,12 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/jsx-boolean-value */
+/* eslint-disable no-constant-condition */
+/* eslint-disable quotes */
 import React, { useContext } from "react";
 import {
   Grid,
   Typography,
-  Paper,
   makeStyles,
   Container,
   Button,
@@ -105,7 +109,7 @@ const VideoPlayer = () => {
           }}
         >
           <Typography variant="h5" gutterBottom>
-            {name ||"You"}
+            {name || "You"}
           </Typography>
           <Grid
             style={{

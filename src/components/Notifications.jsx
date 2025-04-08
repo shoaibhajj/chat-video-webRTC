@@ -1,9 +1,12 @@
+/* eslint-disable react/jsx-boolean-value */
+/* eslint-disable no-constant-condition */
+/* eslint-disable quotes */
 import React, { useContext, useEffect, useRef } from "react";
-import { Button, Grid } from "@material-ui/core";
+import { Button, Grid, Zoom } from "@material-ui/core";
+import PhoneIcon from '@material-ui/icons/Phone';
 import incomingCall from "../audio/incoming-call.mp3";
 import { SocketContext } from "../Context";
-import { Zoom, Icon } from "@material-ui/core";
-import PhoneIcon from "@material-ui/icons/Phone";
+
 const Notifications = () => {
   const { answerCall, call, callAccepted } = useContext(SocketContext);
   const outCallSound = useRef(null);
